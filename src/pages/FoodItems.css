@@ -1,0 +1,196 @@
+.food-items {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.food-items h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.add-item-container {
+  margin-bottom: 20px;
+}
+
+.add-item-button {
+  padding: 10px 20px;
+  background-color: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-item-button:hover {
+  background-color: #006400;
+}
+
+.add-item-popup,
+.edit-item-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.add-item-popup h3,
+.edit-item-popup h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image-preview {
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 10px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #008000;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background-color: #006400;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #000;
+}
+
+.cancel-button:hover {
+  background-color: #aaa;
+}
+
+.food-items-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.food-item {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  width: 300px;
+}
+
+.food-item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.food-item-name {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.food-item-details {
+  margin: 10px;
+}
+
+.food-item-description {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.food-item-available,
+.food-item-veg,
+.food-item-price,
+.food-item-speciality,
+.food-item-rating
+.food-item-ingredients  {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.food-item-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.edit-button i,
+.delete-button i {
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .food-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .food-item {
+    margin: 10px;
+  }
+}
